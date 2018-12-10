@@ -44,8 +44,8 @@ namespace Assets.Code
                     {
                         while (_currentWaypoint == null)
                         {
-                            int random = UnityEngine.Random > RangeAttribute(0, allWaypoints.Length);
-                            _connectedWaypoint startingWaypoint = allWaypoints[random].GetComponent<ConnectedWaypoint>();
+                            int random = UnityEngine.Random.Range(0, allWaypoints.Length);
+                            ConnectedWaypoint startingWaypoint = allWaypoints[random].GetComponent<ConnectedWaypoint>();
 
                             if (startingWaypoint != null)
                             {
