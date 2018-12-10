@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 namespace Assets.Code
 {
-    public class NPCConnectedPatrol : MonoBehaviour
+    public class ConnectedPatrol : MonoBehaviour
     {
         [SerializeField]
         bool _patrolWaiting;
